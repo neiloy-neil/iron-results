@@ -44,7 +44,7 @@ export default function Home() {
           <h1 className="headline mt-8 text-6xl leading-[0.95] text-white sm:text-7xl lg:text-8xl">
             STOP WISHING. START WINNING. ELITE COACHING FOR THE DRIVEN.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
             Personalized training, zero-nonsense nutrition, and 24/7 accountability.
             We don&apos;t just change your body; we change your life.
           </p>
@@ -64,7 +64,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-10 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-zinc-300">
+          <div className="mt-10 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/6 px-4 py-3 text-sm text-zinc-200">
             <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent-strong)]" />
             Join 4 other people looking at this page right now.
           </div>
@@ -81,9 +81,9 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <div className="rounded-[1.5rem] bg-white/5 p-5 ring-1 ring-white/10">
-                  <p className="text-sm uppercase tracking-[0.16em] text-zinc-300">
-                    Coaching stack
-                  </p>
+                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-200">
+                      Coaching stack
+                    </p>
                   <div className="mt-4 grid gap-3 sm:grid-cols-2">
                     {['Training split', 'Nutrition targets', 'Recovery plan', 'Weekly scorecard'].map((item) => (
                       <div key={item} className="rounded-2xl bg-black/40 px-4 py-3 text-sm text-zinc-200">
@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-[1.5rem] bg-white/5 p-5 ring-1 ring-white/10">
                   <div className="flex items-center justify-between">
-                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-300">
+                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-200">
                       Transformation momentum
                     </p>
                     <span className="text-sm text-[var(--accent)]">Week 5</span>
@@ -164,21 +164,21 @@ export default function Home() {
           <article className="dark-card rounded-[2rem] p-7">
             <Dumbbell className="h-7 w-7 text-[var(--accent)]" />
             <h3 className="headline mt-6 text-4xl text-white">CUSTOM TRAINING</h3>
-            <p className="mt-4 leading-8 text-zinc-400">
+            <p className="mt-4 leading-8 text-zinc-300">
               No cookie-cutter plans. Workouts designed for your specific goals, schedule, and available equipment.
             </p>
           </article>
           <article className="dark-card rounded-[2rem] p-7">
             <Target className="h-7 w-7 text-[var(--accent-strong)]" />
             <h3 className="headline mt-6 text-4xl text-white">PRECISION NUTRITION</h3>
-            <p className="mt-4 leading-8 text-zinc-400">
+            <p className="mt-4 leading-8 text-zinc-300">
               Eat what you love while hitting your macros. Flexible dieting that actually works in the real world.
             </p>
           </article>
           <article className="dark-card rounded-[2rem] p-7">
             <Zap className="h-7 w-7 text-[var(--accent)]" />
             <h3 className="headline mt-6 text-4xl text-white">DAILY ACCOUNTABILITY</h3>
-            <p className="mt-4 leading-8 text-zinc-400">
+            <p className="mt-4 leading-8 text-zinc-300">
               Weekly check-ins and direct 1:1 messaging to keep you on track 24/7 until the result is obvious.
             </p>
           </article>
@@ -210,7 +210,7 @@ export default function Home() {
                   <Star key={starIndex} className="h-4 w-4 fill-current" />
                 ))}
               </div>
-              <p className="mt-5 leading-8 text-zinc-300">“{quote}”</p>
+              <p className="mt-5 leading-8 text-zinc-200">“{quote}”</p>
               <div className="mt-6 flex items-center justify-between">
                 <p className="font-semibold text-white">Verified Client</p>
                 <span className="rounded-full bg-[var(--accent)] px-3 py-1 text-xs uppercase tracking-[0.14em] text-black">
@@ -226,13 +226,13 @@ export default function Home() {
         <div className="overflow-hidden rounded-[2.25rem] bg-[var(--accent)] px-6 py-12 text-black shadow-[0_28px_90px_rgba(223,255,0,0.18)] sm:px-8 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.2em] text-black/70">
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-black">
                 Final Push
               </p>
               <h2 className="headline mt-4 text-5xl text-black sm:text-6xl">
                 ARE YOU READY TO LEVEL UP?
               </h2>
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-black/75">
+              <p className="mt-4 max-w-2xl text-lg leading-8 text-black">
                 Join 200+ members who have transformed their lives with elite coaching, clear systems, and zero excuses.
               </p>
             </div>
@@ -246,6 +246,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/8 px-6 py-8 text-sm text-zinc-300 sm:px-8 lg:px-10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="uppercase tracking-[0.16em] text-zinc-200">Iron Results Coaching</p>
+          <p className="text-zinc-400">Built for driven clients who want visible change, not excuses.</p>
+        </div>
+      </footer>
     </main>
   );
 }
