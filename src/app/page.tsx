@@ -81,7 +81,7 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <div className="rounded-[1.5rem] bg-white/5 p-5 ring-1 ring-white/10">
-                  <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
+                  <p className="text-sm uppercase tracking-[0.16em] text-zinc-300">
                     Coaching stack
                   </p>
                   <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-[1.5rem] bg-white/5 p-5 ring-1 ring-white/10">
                   <div className="flex items-center justify-between">
-                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
+                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-300">
                       Transformation momentum
                     </p>
                     <span className="text-sm text-[var(--accent)]">Week 5</span>
@@ -213,7 +213,7 @@ export default function Home() {
               <p className="mt-5 leading-8 text-zinc-300">“{quote}”</p>
               <div className="mt-6 flex items-center justify-between">
                 <p className="font-semibold text-white">Verified Client</p>
-                <span className="rounded-full bg-[var(--accent)]/14 px-3 py-1 text-xs uppercase tracking-[0.14em] text-[var(--accent)]">
+                <span className="rounded-full bg-[var(--accent)] px-3 py-1 text-xs uppercase tracking-[0.14em] text-black">
                   Verified Client
                 </span>
               </div>
